@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Trip Expense Tracker</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <h2>Trip Expense Tracker</h2>
+
+    <div>
+      <input type="text" id="userName" placeholder="Enter your name" />
+      <button onclick="registerUser()">Register/Login</button>
+    </div>
+
+    <div id="feedback" style="color: red"></div>
+    <!-- Feedback/Error Messages -->
+
+    <div id="expenseForm" style="display: none">
+      <input type="number" id="amount" placeholder="Amount" />
+      <select id="owedBy"></select>
+      <button onclick="addExpense()">Add Expense</button>
+      <button onclick="updateBalances()">Refresh Balances</button>
+      <!-- Refresh Balances Button -->
+    </div>
+
+    <div id="userList"></div>
+    <!-- List of Users -->
+
+    <div id="balances"></div>
+    <!-- Balances Display -->
+    <!-- After the balances div -->
+    <div id="allExpenses"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
